@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>In Loving Memory of Jitendra Chouhan</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(rgba(255,248,240,0.9),rgba(255,248,240,0.9)),
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1600');
+    background-size:cover;
+    background-attachment:fixed;
+    color:#333;
+}
+
+header{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero-image{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid gold;
+    box-shadow:0 0 25px rgba(212,175,55,0.6);
+}
+
+h1{
+    font-size:3.5rem;
+    margin-top:20px;
+    color:#7a5c00;
+    font-family:'Cormorant Garamond',serif;
+}
+
+.dates{
+    font-size:1.2rem;
+    margin-top:10px;
+}
+
+.hero-message{
+    max-width:700px;
+    margin:20px auto;
+    font-size:1.2rem;
+    line-height:1.8;
+}
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.4rem;
+    color:#7a5c00;
+    margin-bottom:30px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:0.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+.quote{
+    text-align:center;
+    font-style:italic;
+    margin:15px 0;
+    font-size:1.2rem;
+}
+
+.memory-wall textarea{
+    width:100%;
+    height:120px;
+    padding:10px;
+    border-radius:10px;
+}
+
+.memory-wall button{
+    margin-top:10px;
+    padding:10px 25px;
+    border:none;
+    background:#d4af37;
+    color:white;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+.message{
+    background:#fff9e8;
+    margin-top:10px;
+    padding:10px;
+    border-radius:10px;
+}
+
+.fathers-day{
+    text-align:center;
+    font-size:1.4rem;
+    line-height:2;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#666;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <!-- Put your best photo here -->
+    <img src="images/photo1.jpeg" alt="Jitendra Chouhan" class="hero-image">
+
+    <h1>Jitendra Chouhan</h1>
+
+    <div class="dates">
+        Born: 24 NOVEMBER 1986 ❤️ <br>
+        Remembered: 2 June 2016
+    </div>
+
+    <p class="hero-message">
+        "Forever in my heart, forever my hero."
+    </p>
+
+    <div style="font-size:70px;">🕯️</div>
+</header>
+
+<section>
+    <h2 class="section-title">A Tribute Letter</h2>
+
+    <div class="card">
+        Dear Dad,<br><br>
+
+        Words can never fully express how much I love and miss you.
+        Your guidance, kindness, strength and unconditional love shaped my life.
+
+        Not a day passes without remembering your smile and wisdom.
+
+        Thank you for every sacrifice and every lesson you taught me.
+
+        You will always remain my greatest inspiration.
+
+        <br><br>
+        ❤️ Forever Loved, Forever Remembered
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Family Memories Gallery</h2>
+
+    <div class="gallery">
+        <img src="images/photo1.jpeg" alt="Family Memory">
+        <img src="images/photo2.jpeg" alt="Family Memory">
+        <img src="images/photo3.jpeg" alt="Family Memory">
+        <img src="images/photo4.jpeg" alt="Family Memory">
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Favorite Quotes & Sayings</h2>
+
+    <div class="card">
+        <p class="quote">"Always stay honest and work hard."</p>
+        <p class="quote">"Family is life's greatest blessing."</p>
+        <p class="quote">"Never give up, no matter how difficult the journey."</p>
+        <p class="quote">"Kindness costs nothing but means everything."</p>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Memory Wall</h2>
+
+    <div class="card memory-wall">
+        <textarea id="messageInput" placeholder="Leave a message..."></textarea>
+
+        <button onclick="addMessage()">Post Message</button>
+
+        <div id="messages"></div>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Father's Day Dedication</h2>
+
+    <div class="card fathers-day">
+        Even though you're not here beside me,
+        your love guides me every day.
+
+        <br><br>
+
+        Happy Father's Day, Dad ❤️
+
+        <br><br>
+
+        "Dad, I miss your voice, your guidance, and your presence.
+        Happy Father's Day in heaven. ❤️"
+    </div>
+</section>
+
+<footer>
+    In Loving Memory of Jitendra Chouhan ❤️
+</footer>
+
+<script>
+function addMessage(){
+    let input=document.getElementById("messageInput");
+
+    if(input.value.trim()==="") return;
+
+    let div=document.createElement("div");
+    div.className="message";
+    div.innerText=input.value;
+
+    document.getElementById("messages").appendChild(div);
+
+    input.value="";
+}
+</script>
+
+</body>
+</html>
